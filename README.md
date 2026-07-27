@@ -68,8 +68,8 @@ platforms are structured.
 | Layer | Tech |
 |---|---|
 | Orchestration | LangGraph (multi-agent state machine) + LangChain (tool-calling agents) |
-| LLM | Claude (Anthropic) or GPT (OpenAI) — swappable via `.env` |
-| Retrieval | RAG over Qdrant vector DB, OpenAI embeddings |
+| LLM | Groq (free, cloud-hosted Llama models — default), or Claude/GPT — swappable via `.env` |
+| Retrieval | RAG over Qdrant vector DB, free local sentence-transformers embeddings by default (OpenAI embeddings optional) |
 | Backend API | FastAPI |
 | Persistence | PostgreSQL (conversations, messages, citations, agent trace) |
 | Frontend | React + Vite + Tailwind (chat UI, citation cards, live agent trace, doc upload) |
@@ -106,7 +106,10 @@ enterprise-ai-agent-platform/
 
 ```bash
 cp backend/.env.example backend/.env
-# edit backend/.env and add OPENAI_API_KEY (embeddings) and ANTHROPIC_API_KEY or OPENAI_API_KEY (chat model)
+# Free setup (recommended, no card required): get a free Groq API key at
+# https://console.groq.com/keys and set GROQ_API_KEY in backend/.env.
+# Everything else in .env.example is already configured for a $0 setup —
+# Groq for chat, local sentence-transformers embeddings (no OpenAI needed).
 
 cd infra
 docker compose up --build
