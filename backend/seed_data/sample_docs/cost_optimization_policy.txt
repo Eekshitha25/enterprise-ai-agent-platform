@@ -1,0 +1,10 @@
+Internal Cloud Cost Optimization Policy (v2)
+
+1. All SageMaker training jobs must have a maximum runtime limit configured;
+   jobs without an explicit timeout will be flagged by the FinOps agent.
+2. Cross-region data transfer for training datasets should be avoided by
+   replicating source data into the training region ahead of time.
+3. Any month-over-month service cost increase greater than 25% triggers an
+   automatic anomaly report to the engineering lead responsible for that service.
+4. Reserved Instances / Savings Plans should be reviewed quarterly against
+   actual EC2 usage patterns.

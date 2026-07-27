@@ -1,0 +1,26 @@
+{
+  "2026-05": {
+    "total": 18420.55,
+    "by_service": {
+      "EC2": 6200.10,
+      "S3": 1450.30,
+      "RDS": 3100.00,
+      "CloudFront": 800.15,
+      "Lambda": 420.00,
+      "DataTransfer": 1250.00,
+      "SageMaker": 5200.00
+    }
+  },
+  "2026-06": {
+    "total": 27810.90,
+    "by_service": {
+      "EC2": 6350.00,
+      "S3": 1500.10,
+      "RDS": 3150.00,
+      "CloudFront": 810.00,
+      "Lambda": 430.00,
+      "DataTransfer": 4620.80,
+      "SageMaker": 10950.00
+    }
+  }
+}

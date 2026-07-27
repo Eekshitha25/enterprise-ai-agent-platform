@@ -1,0 +1,8 @@
+{
+  "2026-06": [
+    {"service": "SageMaker", "metric": "training instance hours", "delta_pct": 110.5, "note": "new model retraining job left running continuously after a misconfigured cron schedule"},
+    {"service": "DataTransfer", "metric": "outbound GB", "delta_pct": 269.2, "note": "spike correlates with SageMaker job pulling a large dataset from an external region repeatedly"},
+    {"service": "EC2", "metric": "on-demand instance hours", "delta_pct": 2.4, "note": "within normal range"},
+    {"service": "S3", "metric": "storage GB", "delta_pct": 3.4, "note": "within normal range"}
+  ]
+}

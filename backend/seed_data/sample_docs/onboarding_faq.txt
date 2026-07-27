@@ -1,0 +1,13 @@
+Engineering Onboarding FAQ
+
+Q: How do I request AWS access?
+A: Submit a request through the internal IT portal; access is provisioned
+   via IAM roles scoped to your team's project, not individual users.
+
+Q: Where can I find architecture diagrams?
+A: They're stored in Confluence under Engineering > Architecture, and mirrored
+   in the docs/ARCHITECTURE.md file in each service's repo.
+
+Q: Who do I contact about a cost overrun?
+A: File a ticket with the FinOps team; they review the Cost Optimization Policy
+   and can pause non-critical jobs if needed.
